@@ -41,11 +41,11 @@ seg_vali_text = []  # 分词后的验证集
 
 
 def devide():  # 将标签与句子分离
-    with open('trainingSet.txt', encoding='utf-8') as f:
+    with open('./data/trainingSet.txt', encoding='utf-8') as f:
         train_set = f.readlines()
-    with open('testSet.txt', encoding='utf-8') as f:
+    with open('./data/testSet.txt', encoding='utf-8') as f:
         test_set = f.readlines()
-    with open('validationSet.txt', encoding='utf-8') as f:
+    with open('./data/validationSet.txt', encoding='utf-8') as f:
         vali_set = f.readlines()
     for line in train_set:
         t = line.split('\t', 1)  # 分割标签与句子
@@ -80,7 +80,7 @@ def segment():  # 分词
 
 def get_stop_words():  # 获取停用词列表
 
-    with open('stopwords.txt', encoding='utf-8') as f:
+    with open('./keywords/stopwords.txt', encoding='utf-8') as f:
         stop_word = f.read()
     string = stop_word.rstrip().split('\n')
     for s in string:
