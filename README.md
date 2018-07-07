@@ -21,6 +21,6 @@
 │   │   
 │   └── feature_words.txt	
 │
-└—— master.py                     // 主程序
+└── master.py                     // 主程序
 ```
 
