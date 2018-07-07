@@ -9,7 +9,7 @@
 
 ```
 /
-├── data/											// 样本集
+├── data/                         // 样本集
 │   ├── trainingSet.txt
 │   │   
 │   │── testSet.txt
@@ -17,10 +17,10 @@
 │   └── validationSet
 │       
 └── keywords/
-│   ├── stopwords.txt								// 停用词
+│   ├── stopwords.txt             // 停用词
 │   │   
 │   └── feature_words.txt	
 │
-│—— master.py										// 主程序
+│—— master.py                     // 主程序
 ```
 
